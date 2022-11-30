@@ -1,0 +1,103 @@
+﻿<html>
+<!-- Mirrored from x20xx.com/higgs.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Nov 2022 06:31:22 GMT -->
+<head>  
+<!-- 3-2013 -->
+
+<title>: HiggsDanmaku</title>
+
+<style type="text/css">
+      html, body {  font-size:18px;
+      font-weight:bold;
+ font-family: Courier New, Lucida Console, monospace;
+ color:#ffffff;background:#000000; overflow:hidden;
+ }
+ img[src$=".gif"], img[src$=".png"], img[src$=".jpg"] {
+                   image-rendering: -moz-crisp-edges;        
+                   image-rendering:   -o-crisp-edges;         
+                   image-rendering: -webkit-optimize-contrast;
+                   image-rendering: crisp-edges;
+                   -ms-interpolation-mode: nearest-neighbor;  
+                 }
+
+</style>
+</head>
+<BODY >
+
+ <div id="ff" ><br><br>
+  	<center><script language="javascript">
+var delay=300
+var curindex=0
+
+var randomimages=new Array()
+
+	randomimages[0]="higgs/h1.png"
+	randomimages[1]="higgs/h2.jpg"
+	randomimages[2]="higgs/h3.jpg"
+	randomimages[3]="higgs/h4.jpg"
+	randomimages[4]="higgs/h5.png"
+	randomimages[5]="higgs/h6.png"
+	randomimages[6]="higgs/h7.jpg"
+	randomimages[7]="higgs/h8.jpg"
+	randomimages[8]="higgs/h9.png"
+	randomimages[9]="higgs/h10.jpg"
+	randomimages[10]="higgs/h11.jpg"
+	randomimages[11]="higgs/h12.jpg"
+	randomimages[12]="higgs/h13.jpg"	
+	randomimages[13]="higgs/h14.gif"
+	randomimages[14]="higgs/h15.png"
+	randomimages[15]="higgs/h16.jpg"
+	
+var preload=new Array()
+
+for (n=0;n<randomimages.length;n++)
+{
+	preload[n]=new Image()
+	preload[n].src=randomimages[n]
+}
+
+document.write('<img name="defaultimage" src="'+randomimages[Math.floor(Math.random()*(randomimages.length))]+'">')
+
+function rotateimage()
+{
+
+if (curindex==(tempindex=Math.floor(Math.random()*(randomimages.length)))){
+curindex=curindex==0? 1 : curindex-1
+}
+else
+curindex=tempindex
+
+	document.images.defaultimage.src=randomimages[curindex]
+}
+
+setInterval("rotateimage()",delay)
+
+</script></center>
+  </div>
+  <script type="text/javascript" language="javascript" charset="utf-8">
+function getTransformProperty(element) {
+    var properties = ['transform', 'msTransform', 'WebkitTransform', 'MozTransform' , 'OTransform'];
+    var p;
+    while (p = properties.shift()) {
+        if (typeof element.style[p] != 'undefined') {
+            return p;
+        }
+    }
+    
+    return false;
+}
+
+var div = document.getElementById('ff');
+var property = getTransformProperty(div);
+
+if (property) {
+    var d = 0;
+    setInterval(function () {div.style[property] = 'rotate(' + (d++ % 360) *2+ 'deg)';}, 0);
+	} else {
+}
+
+</script>
+
+
+</body>
+<!-- Mirrored from x20xx.com/higgs.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Nov 2022 06:31:39 GMT -->
+</html>
